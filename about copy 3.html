@@ -81,9 +81,7 @@
   </nav>
 </header>
 
-<div class="hero-full-container background-image-container white-text-container" style="background-image: url('https://greenblog.co.kr/wp-content/uploads/2020/04/%EC%84%9C%EC%9A%B8-%EC%83%89%EC%83%81-%EC%A7%80%EB%8F%84-min.jpg')">
-
-  <div class="section-container">
+<div class="section-container">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -139,58 +137,13 @@
   </div>
 </footer>
 
-
-</div>
-
-
-
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
 </script>
 
-<!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b0a2517b770a94b696a3d34e4f2e13ba&libraries=services"></script> -->
-<script>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapOption = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };  
-
-// 지도를 생성합니다    
-var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-// 주소-좌표 변환 객체를 생성합니다
-var geocoder = new kakao.maps.services.Geocoder();
-
-// 주소로 좌표를 검색합니다
-geocoder.addressSearch('제주특별자치도 제주시 첨단로 242', function(result, status) {
-
-    // 정상적으로 검색이 완료됐으면 
-     if (status === kakao.maps.services.Status.OK) {
-
-        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-
-        // 결과값으로 받은 위치를 마커로 표시합니다
-        var marker = new kakao.maps.Marker({
-            map: map,
-            position: coords
-        });
-
-        // 인포윈도우로 장소에 대한 설명을 표시합니다
-        var infowindow = new kakao.maps.InfoWindow({
-            content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
-        });
-        infowindow.open(map, marker);
-
-        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-        map.setCenter(coords);
-    } 
-});    
-</script>
-
-<!-- <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f227d02def2a3ff8e10e918268f049ab"></script>
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f227d02def2a3ff8e10e918268f049ab"></script>
   <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
@@ -201,7 +154,7 @@ geocoder.addressSearch('제주특별자치도 제주시 첨단로 242', function
     
     // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
     var map = new kakao.maps.Map(mapContainer, mapOption); 
-    </script> -->
+    </script>
 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
