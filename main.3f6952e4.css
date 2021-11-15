@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: Jua, Gugi sans-serif;
   -ms-text-size-adjust: 100%;
@@ -38,11 +39,9 @@ video {
 }
 
 .logoimg {
-  width: 70px;
+  width: 100px;
 }
-.logoimg:hover {
 
-}
 .img_1 {
   margin: 0px, auto;
   position: relative;
@@ -386,7 +385,7 @@ h6 {
   /* font-family: Roboto Mono, Helvetica, Arial, sans-serif; */
   font-weight: 700;
   line-height: 1.1;
-  color: #fff;
+  color: #000;
 }
 .h1 .small,
 .h1 small,
@@ -3926,7 +3925,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a,
 .navbar-inverse .navbar-text,
 .drop_down > a {
-  color: #fff;
+  color: #000;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
@@ -4828,7 +4827,7 @@ body.minimal {
 @media (min-width: 1200px) {
   .section-container {
     padding: 80px 0;
-    background-color: rgb(10, 55, 50);
+    background-color: #fff;
   }
 }
 .section-container.only-container {
@@ -4840,6 +4839,7 @@ body.minimal {
   }
 }
 .background-image-container {
+  background-image: url('/assets/images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -5117,7 +5117,7 @@ textarea {
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a,
   .drop_down > a {
-    border-right: 1px solid #fff;
+    border-right: 1px solid #000;
   }
 }
 .navbar-inverse .navbar-nav > li:last-of-type a {
@@ -5230,8 +5230,7 @@ textarea {
 }
 .drop_down_content > a {
   text-decoration-line: none;
-  color: #fff;
-  color: #fff;
+  color: #000;
   padding: 8px;
   text-align: none;
   display: block;
@@ -5248,7 +5247,8 @@ textarea {
 }
 
 .footer_color {
-  background-color: rgb(10, 55, 50);
+  color: #000;
+  background-color: #fff;
 }
 
 .btn_1 {
