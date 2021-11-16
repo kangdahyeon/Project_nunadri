@@ -1912,11 +1912,11 @@ fieldset[disabled] .form-control {
 textarea.form-control {
   height: auto;
 }
-/* input[type="search"] {
+  input[type="search"] {
   -webkit-appearance: none;
-} */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* input[type="date"].form-control,
+} 
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control,
   input[type="time"].form-control {
@@ -1966,7 +1966,7 @@ textarea.form-control {
   input[type="time"].input-lg {
     line-height: 41px;
   }
-} */
+}  */
 .form-group {
   margin-bottom: 15px;
 }
@@ -5003,8 +5003,8 @@ textarea {
   background-color: #fff;
   padding: 2rem 5rem;
   position: relative;
-  width: 80%;
-  margin: -10em auto 20px;
+  /* width: 80%;
+  margin: -10em auto 20px; */
 }
 @media (max-width: 992px) {
   .card-container {
@@ -5023,8 +5023,8 @@ textarea {
   display: block;
 }
 .black-image-project-hover img {
-  -webkit-filter: contrast(200%) grayscale(100%);
-  filter: contrast(200%) grayscale(100%);
+  /* -webkit-filter: contrast(200%) grayscale(100%);
+  filter: contrast(200%) grayscale(100%); */
   -webkit-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
