@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<hea>
+<head>
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
@@ -11,27 +11,24 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Jua&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 
-  <title>헤더/푸터</title>  
+  <title>우리집</title>  
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></hea
+<link href="./main.3f6952e4.css" rel="stylesheet">
+</head>
 
-<body class="minimal">
+<body class="">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
+ <!-- Add your content of header -->
+ <header>
   <nav class="navbar  navbar-fixed-top navbar-inverse">
     <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -45,8 +42,8 @@
         <ul class="nav navbar-nav ">
           <li class="img_1"> 
             <a href="./index.html" title="" >
-            <img src="assets/images/logo1-1.png" class="logoimg img_2">
-            <img src="assets/images/logo1-2.png" class="logoimg img_3">
+              <img src="assets/images/logo1-1.png" class="logoimg img_2">
+              <img src="assets/images/logo1-2.png" class="logoimg img_3">
             </a>
           </li>
           <li>
@@ -73,27 +70,49 @@
                 </div>
             </div>
           </li>
-
-          
           <li style="margin-left: 400px;"><a href="./components.html" title=""><i class="fas fa-sign-in-alt"></i> 로그인</a></li>
           <li><a href="./signIn.html" title=""><i class="fas fa-folder-plus"></i> 회원가입</a></li>
-
         </ul> 
       </div> 
     </div>
   </nav>
 </header>
-<!-- Add your site or app content here -->
 
-  <footer class="footer-container text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+<div class="hero-full-container white-text-container">
+  <div class="section-container background-image-container">
+    <div class="section-container-spacer text-center">
+      <div class="container">
+        <h1 class="h2">게시판</h1>
+        <div id="divsize"> 
+          <input type="text">
+          <input type="textarea">
+        </div>
+        <div class="div_right">
+          <a href="#" class="btn btn-default" id="writerBtn">글쓰기</a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</div>
+<!--푸터-->
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12" style="padding : 30px">
+        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+<!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b0a2517b770a94b696a3d34e4f2e13ba&libraries=services"></script> -->
+<script>
+ <script type="text/javascript" src="./main.70a66962.js"></script></body>
+
 </html>
