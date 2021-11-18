@@ -8,21 +8,92 @@
   <meta content="description" name="description">
   <meta name="google" content="notranslate" />
   <meta content="Mashup templates have been developped by Orson.io team" name="author">
-
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
   <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  
 
-  <title>고객센터</title>  
+  <title>질문했어요</title> 
+  
 
-  <link href="./main.3f6952e4.css" rel="stylesheet">
+<link href="./main.3f6952e4.css" rel="stylesheet">
+<link href="./Boastcss.css" rel="stylesheet2">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./main.70a66962.js"></script>
+<style>
+.qna {
+  height: 200px;
+}
+
+.qna .box.text {
+  padding: 20px 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.qna .box.text > h2 {
+  text-align: center;
+  position: relative;
+}
+
+.qna .box.text > h2:after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(0deg);
+  transition: 0.25s;
+}
+
+.qna .box.text.qna_show > h2:after {
+  transform: rotate(90deg);
+}
+
+.qna .box.text > h2:before {
+  content: "Q. ";
+}
+
+.qna .box.text > .box_content {
+  overflow: hidden;
+  padding: 0 50px;
+  display: none;
+}
+
+.qna .box.text > .box_content p:first-of-type:before {
+  content: "A. ";
+  font-weight: bold;
+}
+
+
+.boast_h1 {
+  color: black;
+  font-size: 30px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  margin-top: 19px;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.1;
+  left: 5px; 
+  top: 50px;
+
+}
+.boast_h2 {
+ color: black;
+}
+</style>
 </head>
 
 <body class="">
+
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
@@ -42,8 +113,8 @@
         <ul class="nav navbar-nav ">
           <li class="img_1"> 
             <a href="./index.html" title="" >
-              <img src="assets/images/logo1-1.png" class="logoimg img_2">
-            <img src="assets/images/logo1-2.png" class="logoimg img_3">
+            <img src="assets/images/logo-1.png" class="logoimg img_2">
+            <img src="assets/images/logo-2.png" class="logoimg img_3">
             </a>
           </li>
           <li>
@@ -81,81 +152,60 @@
   </nav>
 </header>
 
+<div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+  <div class="text-center">
+    <h1 class="boast_h1">질문했어요
+   <p>여러분들이 궁금한 질문을 질문했어요</p></h1>
+  </div>
+</div>
+
 <div class="section-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="section-container-spacer text-center">
-            <h1 class="h2">고객센터</h1>
-
-              <div class="accordion_area">
-                <button class="btn_1 btn_toggle">Whit is accordion?</button>
-                <div class="content_area">
-                  Accordion is accordion.
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+        <div class="qna">
+          <div class="custom_page_123"></div>
+          <div class="col col2" id="col2">
+            <div id="boxholder_1" class="box cpbox text">
+              <h2 class="boast_h2"> 왜 너나들이라 지었나요? </h2>
+              <div class="box_content">
+                <p>너나들이는 서로 ‘너’, ‘나’ 하고 부르며 터놓고 허물없이 지내는 사이. 라는 순우리말이며, 가까운 이웃간에 터놓고 허물없이 지내자는 의미에서 이름을 짓게되었습니다. </p>
               </div>
-
-              <div class="accordion_area">
-                <button class="btn_1 btn_toggle">Whit is accordion?</button>
-                <div class="content_area">
-                  Accordion is accordion.
-                </div>
+              <div class="clear"><!--space--></div>
+            </div>  
+            
+            <div class="col col2" id="col2">
+              <div id="boxholder_1" class="box cpbox text">
+              <h2 class="boast_h2">질문2</h2>
+              <div class="box_content">
+                <p>어쩌구 저쩌구 어쩌구 저쩌구 어쩌구 저쩌구</p>
               </div>
-
-              <div class="accordion_area">
-                <button class="btn_1 btn_toggle">Whit is accordion?</button>
-                <div class="content_area">
-                  Accordion is accordion.
-                </div>
-              </div>
-
-              <div class="accordion_area">
-                <button class="btn_1 btn_toggle">Whit is accordion?</button>
-                <div class="content_area">
-                  Accordion is accordion.
-                </div>
-              </div>
-
-              <div class="accordion_area">
-                <button class="btn_1 btn_toggle">Whit is accordion?</button>
-                <div class="content_area">
-                  Accordion is accordion.
-                </div>
-              </div>
-
-              <div class="accordion_area">
-                <button class="btn_1 btn_toggle">Whit is accordion?</button>
-                <div class="content_area">
-                  Accordion is accordion.
-                </div>
-              </div>
+              <div class="clear"><!--space--></div>
               
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-               <form action="" class="reveal-content">
-                  <div class="row">
-                    <!-- <div class="col-md-7"> -->
-                      <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                      </div>
-                      <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-default btn-lg">보내기</button>
-                    </div>
-                  </div>
-                </form>
-            </div>
-
+            </div>   
+            
+            <div class="col col2" id="col2">
+              <div id="boxholder_1" class="box cpbox text">
+                <h2 class="boast_h2">질문3</h2>
+                <div class="box_content">
+                  <p>어쩌구 저쩌구 어쩌구 저쩌구 어쩌구 저쩌구</p>
+                </div> 
+                <div class="clear"><!--space--></div>
+               
           </div>
          
-       </div>
+          <div class="col col2" id="col2">
+            <div id="boxholder_1" class="box cpbox text">
+              <h2 class="boast_h2">질문4</h2>
+              <div class="box_content">
+                <p>어쩌구 저쩌구 어쩌구 저쩌구 어쩌구 저쩌구</p>
+              </div> 
+              <div class="clear"><!--space--></div>
+                 
+        </div>
       </div>
-    </div>
-  </div>
+      
+    
 
 
 <footer class="footer-container text-center footer_color">
@@ -172,35 +222,8 @@
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
-
-  function bindingAccordionEvent(wrap){
-  let areaArr = document.querySelectorAll(wrap);
-  
-  areaArr.forEach(function(area){
-     let hasGroup = area.dataset['group'] !== undefined ? true : false;
-    let btn = area.querySelector('.btn_toggle');
-    
-    btn.addEventListener('click', function(){
-      if(hasGroup === true){
-        let name = area.dataset['group'];
-        let groupArr = document.querySelectorAll(wrap + '[data-group="'+ name +'"]');
-        let thisContent = area.querySelector('.content_area');
-        
-        groupArr.forEach(function(group){
-           let content = group.querySelector('.content_area');
-          content.classList.remove('act');
-        });
-        thisContent.classList.add('act');
-      }else{
-        let content = area.querySelector('.content_area');
-        content.classList.toggle('act');
-      }
-    });
-  });
-}
-bindingAccordionEvent('.accordion_area');
 </script>
-  
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
@@ -213,7 +236,8 @@ bindingAccordionEvent('.accordion_area');
   ga('create', 'UA-XXXXX-X', 'auto');
   ga('send', 'pageview');
 </script>
---> 
-<script type="text/javascript" src="./main.70a66962.js"></script>
+
+--> <script type="text/javascript" src="./main.70a66962.js"></script>
 </body>
+
 </html>
