@@ -27,19 +27,22 @@
     }
 
     .item_sell {
-      width: 100%;
-      height: 400px;
+      width: 80%;
+      height: 390px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       padding-bottom: 52px;
       border-top: 3px solid #eeeeee;
       border-bottom: 3px solid #eeeeee;
+      margin: auto;
+      padding-left: 72px;
     }
 
     .item_img {
       width: 320px;
       height: 270px;
+      padding-bottom: 25%;
     }
 
     .item_title1 {
@@ -50,12 +53,24 @@
       -webkit-box-orient: vertical;
     }
 
+
     .black-image-project-hover img:hover {
       transform: scale(1.05);
     }
 
     .black-image-project-hover img {
       transition: all 300ms ease;
+    }
+
+    .item_explain {
+      height: 100%;
+      margin-right: 112px;
+      margin-top: 42px;
+    }
+
+    .item_button {
+      float: right;
+      line-height: 112px;
     }
   </style>
 
@@ -137,12 +152,12 @@ background-image-container : 백그라운드 이미지 지정-->
               <h1 class="h2" style="line-height: 0; color: black; text-shadow: none;">중고거래</h1>
             </div>
           </div>
-          <div class="item_sell" style="width: 80%; height: 390px; margin:auto; padding-left: 72px;">
-            <div class="item_img" style="padding-bottom: 25%;">
+          <div class="item_sell">
+            <div class="item_img">
               <img src="http://image.auction.co.kr/itemimage/24/2d/95/242d955ab7.jpg" alt=""
                 style="width: 100%; border-radius: 6px;">
             </div>
-            <div class="item_explain" style="height: 100%; margin-right: 112px; margin-top:42px ;">
+            <div class="item_explain">
               <div style="margin-top: 24px;">
                 <div class="item_title">
                   <p style="font-size: 24px; color: black;  text-shadow: none;">갤럭시 폰</p>
@@ -158,7 +173,7 @@ background-image-container : 백그라운드 이미지 지정-->
                   </div>
                 </div>
               </div>
-              <div style="float: right; line-height: 112px;">
+              <div class="item_button">
                 <button type="button" class="btn btn-secondary"
                   style="background-color:grey; border-radius: 4px; width: 100px; font-size: 14px; color: white;">목록으로</button>
                 <button type="submit" class="btn btn-info"
