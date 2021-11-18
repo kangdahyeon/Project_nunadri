@@ -100,71 +100,72 @@
 
 
     /* 글쓰기 버튼*/
-#writerBtn {
-  position: absolute;
-  right: 270px;
-  color: black;
-  margin-top: 10px;
-  border-radius: 5px;
-  border-color: black;
-}
+    #writerBtn {
+      position: absolute;
+      right: 270px;
+      color: black;
+      margin-top: 10px;
+      border-radius: 5px;
+      border-color: black;
+    }
 
-.div_right {
-  padding-left: 896px;
-  
-}
+    .div_right {
+      padding-left: 896px;
 
-.div_right > input {
-  position: relative;
-  width: 200px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.0001);
-  border: 1px solid black;
-  color : black;
-  padding-left: 30px;
-}
+    }
 
-.icon_search {
-  position: absolute;
-  left: 1085px;
-  margin-top:7.5px;
-  color: black;
-}
+    .div_right>input {
+      position: relative;
+      width: 200px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.0001);
+      border: 1px solid black;
+      color: black;
+      padding-left: 30px;
+    }
 
-.white-text-container h2 {
-  color : black;
-}
+    .icon_search {
+      position: absolute;
+      left: 1085px;
+      margin-top: 7.5px;
+      color: black;
+    }
 
-.black-image-project-hover img {
-  -webkit-transform:scale(1);
-  -moz-transform:scale(1);
-  -ms-transform:scale(1); 
-  -o-transform:scale(1);  
-  transform:scale(1);
-  -webkit-transition:.3s;
-  -moz-transition:.3s;
-  -ms-transition:.3s;
-  -o-transition:.3s;
-  transition:.3s;
-}
-.black-image-project-hover img:hover {
-  -webkit-transform:scale(1.2);
-    -moz-transform:scale(1.2);
-    -ms-transform:scale(1.2);   
-    -o-transform:scale(1.2);
-    transform:scale(1.2);
-}
+    .white-text-container h2 {
+      color: black;
+    }
+
+    .black-image-project-hover img {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -ms-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+    }
+
+    .black-image-project-hover img:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   </style>
 
   <link href="./main.3f6952e4.css" rel="stylesheet">
 </head>
 
 <body class="">
-  <div id="site-border-left"></div>
+  <!-- <div id="site-border-left"></div>
   <div id="site-border-right"></div>
   <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
+  <div id="site-border-bottom"></div> -->
   <!-- Add your content of header -->
   <header>
     <nav class="navbar  navbar-fixed-top navbar-inverse">
@@ -194,7 +195,7 @@
               <div class="drop_down">
                 <a><i class="far fa-comment-alt"></i> 소통해요</a>
                 <div class="drop_down_content">
-                  <a href="./Boast.html" title="">자랑해요</a>
+                  <a href="./feed_view.html" title="">자랑해요</a>
                   <a href="./works.html" title="">꿀팁있어요</a>
                   <a href="./works.html" title="">잡담해요</a>
                 </div>
@@ -229,16 +230,22 @@
 
           <div class="col-sm-8 col-sm-offset-2 section-container-spacer" style="margin-bottom: 0px;">
             <div class="text-center">
-              <h1 class="h2"  style="color: black; text-shadow: none;">자랑해요</h1>
+              <h1 class="h2" style="color: black; text-shadow: none;">자랑해요</h1>
             </div>
           </div>
 
           <div class="body" style="font-size: 12px;">
 
-                   <!--검색창-->
-          <div class="div_right">
-            <input type="search" placeholder=" 검색어를 입력하세요"><i class="fas fa-search icon_search"></i>
-          </div>
+            <!--글쓰기 버튼-->
+            <div class="">
+              <a href="feed_edit.html" class="btn btn-default" id="writerBtn"
+                style="color: black; font-size: 15px;">작성하기</a>
+            </div>
+
+            <!--검색창-->
+            <div class="div_right2">
+              <input type="search" placeholder=" 검색어를 입력하세요"><i class="fas fa-search icon_search2"></i>
+            </div>
 
             <div class="used_body">
 
@@ -255,9 +262,6 @@
                             class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">귀여운 우리 똘이</a>
-                      </div>
 
                       <div class="item_icons">
 
@@ -271,9 +275,7 @@
                             class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">잘나왔어요</a>
-                      </div>
+
 
                       <div class="item_icons">
 
@@ -288,9 +290,6 @@
                             alt="" class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">귀여운 냥이</a>
-                      </div>
 
                       <div class="item_icons">
 
@@ -304,9 +303,7 @@
                             alt="" class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">오늘 운동 잘 먹었어요</a>
-                      </div>
+
 
                       <div class="item_icons">
 
@@ -324,9 +321,7 @@
                             alt="" class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">제주도 놀러왔어요</a>
-                      </div>
+
 
                       <div class="item_icons">
 
@@ -341,9 +336,7 @@
                             alt="" class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">아들이랑 한컷</a>
-                      </div>
+
 
                       <div class="item_icons">
 
@@ -358,9 +351,7 @@
                             alt="" class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">턱걸이 성공</a>
-                      </div>
+
 
                       <div class="item_icons">
 
@@ -369,15 +360,13 @@
 
                     <li class="gallery_view">
                       <div>
-                        <a href="./work.html" title="" class="black-image-project-hover">
+                        <a href="./feed_view.html" title="" class="black-image-project-hover">
                           <img
                             src="https://www.popco.net/zboard/data/photo_gallery/2015/07/19/83310533755ab3b834bc6a.jpg"
                             alt="" class="img-responsive" style="height:200px;width:200px; border-radius: 10px;">
                         </a>
                       </div>
-                      <div class="item_tit">
-                        <a href="./work.html" target="_blank" style="color: black;">한강 다녀왔어요</a>
-                      </div>
+
 
                       <div class="item_icons">
 
@@ -390,35 +379,26 @@
                 </div>
               </div>
             </div>
+
+            <div>
+              <button id="searchMoreNotify" class="btn btn-outline-primary btn-block col-sm-10 mx-auto" style="background-color: white; box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 20%);
+            border-radius: 5px; width: 200px; margin-left: 41%;">더 보기</button>
+            </div>
+
           </div>
-
-
         </div>
       </div>
     </div>
+  </div>
 
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
 
-
-    <footer class="footer-container text-center footer_color">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/"
-                title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/"
-                title="Beautiful Free Images">Unsplash</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        navActivePage();
-      });
-    </script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -432,7 +412,8 @@
 </script>
 
 -->
-    <script type="text/javascript" src="./main.70a66962.js"></script>
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+
 </body>
 
 </html>
