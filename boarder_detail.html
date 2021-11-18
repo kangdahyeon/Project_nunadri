@@ -74,6 +74,7 @@
         border-right: 1px solid #000;
       }
       .navbar-inverse_ditail .navbar-nav2 > li > a,
+      .navbar-nav2 > li > a ,
       .drop_down_detail > a {
         border-right: 1px solid #fff;
       }
@@ -83,6 +84,11 @@
     .drop_down_detail > a {
       color: #fff;
     }
+    .navbar-nav2 > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 19px;
+    }
     .navbar-collapse {
       overflow-x: visible;
       padding-right: 15px;
@@ -90,9 +96,6 @@
       border-top: 1px solid transparent;
       box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1);
       -webkit-overflow-scrolling: touch;
-    }
-    #login-color {
-      color : #fff;
     }
     @media (min-width: 768px) {
       .navbar {
@@ -115,6 +118,11 @@
     .drop_down_detail > a {
       color: #fff;
     }
+    .navbar-inverse .navbar-nav > li > a,
+    .navbar-inverse .navbar-text,
+    .drop_down > a {
+      color: #fff;
+    }
     @media (min-width: 768px) {
       .navbar-nav2 {
         float: left;
@@ -124,8 +132,7 @@
         float: left;
       }
       .navbar-nav2 > li > a,
-      .drop_down > a,
-      .drop_down_detail > a {
+      .navbar-nav2 > li > a { 
         padding-top: 0.5px;
         padding-bottom: 0.5px;
       }
@@ -153,9 +160,22 @@
       font-weight: 300px;
       cursor: pointer;
     }
-    .drop_down_detail > a:hover {
-      text-decoration-line: none;
-      color: #fff;
+    /*로그인 / 회원가입 부분 호버*/
+    .navbar-inverse .navbar-nav2 > .active > a,
+    .navbar-inverse .navbar-nav2 > .active > a:focus,
+    .navbar-inverse .navbar-nav2 > .active > a:hover,
+    .navbar-inverse .navbar-nav2 > li > a:focus,
+    .navbar-inverse .navbar-nav2 > li > a:hover,
+    .drop_down_detail > a :hover {
+      color: rgb(218, 162, 60);
+      background-color: transparent;
+    }
+    .nav > li > a {
+      font-size: 18px;
+      font-weight: 300;
+      -webkit-transition: all 0.1s linear;
+      -o-transition: all 0.1s linear;
+      transition: all 0.1s linear;
     }
     .drop_down_content {
       display: none;
@@ -181,16 +201,26 @@
     .drop_down_detail > a:hover {
       color: rgb(218, 162, 60);
       font-weight: 700;
+      text-decoration: none;
     }
+    /*우리집, 소통해요, 게시판 패딩*/
     .nav > li > a,
     .drop_down > a,
     .drop_down_detail > a {
-      padding: 10px 15px;
+      padding: 0 10px 0 15px;
+    }
+    /* 로고이미지 패딩 */
+    .nav > li > a {
+      padding:0 10px 0 15px;
     }
     .nav > li,
     .nav > li > a {
       position: relative;
       display: block;
+    }
+    /*회원가입 맨 뒤에 선 빼는거*/
+    .navbar-inverse .navbar-nav2 > li:last-of-type a {
+    border-right: none;
     }
     .nav > li > a {
     /* font-size: 18px; */
@@ -258,6 +288,7 @@
     /*상세페이지 이미지 최대크기*/
     .img_detail {
       max-height: 350px;
+      padding: 10px;
     }
     /*테이블 css*/
     table.type04 {
@@ -306,11 +337,36 @@
       color : white;
       padding-left: 30px;
     }
-    textarea {
-      width: 80%;
-      background-color: rgba(0, 0, 0, 0.0001);
-      border: 1px solid white;
-      color : white;
+    #divsize {
+      margin: 0px auto;
+      width: 1000px;
+      text-align: center;
+    }
+    #comment {
+      position: relative;
+      left: 10%;
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 5px; 
+    }
+    .position_comment {
+      text-decoration: none;
+      z-index: 2;
+      position: absolute;
+      top: 86%;
+      right: 25%;
+      margin-top:10px;
+      color: #fff;
+    }
+    .footer_color {
+      color: #fff;
+      background-color: rgb(10, 55, 50);
+    }
+    .footer_color > a {
+      text-decoration: none;
+    }
+    td > a:hover {
+      color: rgb(241, 175, 196);
     }
   </style>
 
@@ -324,20 +380,19 @@
 <div id="site-border-bottom"></div>
  <!-- Add your content of header -->
  <header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse navbar-inverse_ditail">
+  <nav class="navbar  navbar-fixed-top navbar-inverse">
     <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav2 ">
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav2 ">
           <li class="img_1"> 
-            <a href="./index.html" title="" >
-              <img src="assets/images/logo1-1.png" class="logoimg img_2">
+            <a href="./index.html" title="" > 
+              <img src="assets/images/logo2-1.png" class="logoimg img_2">
               <img src="assets/images/logo1-2.png" class="logoimg img_3">
             </a>
           </li>
@@ -381,12 +436,13 @@
   <div class="section-container_detail">
     <div class="section-container-spacer text-center">
       <div class="container">
-        <h1 class="h2">게시판</h1>
+        <h1 class="h2">OO게시판</h1>
          <div id="divsize"> 
             <table class="type04">
               <td id="table_width_write">닉네임</td>
               <td>제목제목제목</td>
               <td id="table_width_write">작성시간</td>
+              <td><a href="#">수정</a>/<a href="#">삭제</a></td>
             </table>
               <!--본문 내용, 이미지-->
               <div class="col-lg-4">
@@ -404,19 +460,21 @@
                   <td id="table_width_write">닉네임</td>
                   <td>댓글 내용 표출 </td>
                   <td id="table_width_write">작성시간</td>
+                  <td><a href="#">수정</a>/<a href="#">삭제</a></td>
                 </table>
 
-              <div class="div_right">
-              <textarea class="" rows="2" name="bdContent" placeholder="댓글을 작성해주세요"></textarea>
-              <a href="#" class="btn btn-default position" id="writerBtn">댓글달기</a>
-            </div>
+              <div class="col-lg-10">
+                <textarea id="comment" rows="2" placeholder="댓글을 작성해주세요"></textarea>
+              </div>
+              <a href="#" class="position_comment">댓글달기</a>
+              <!-- class="btn btn-default position_comment" id="commentBtn" -->
           </div>
       </div>
     </div>
   </div>
 </div>
 <!--푸터-->
-<footer class="footer-container text-center">
+<footer class="footer-container text-center footer_color">
   <div class="container">
     <div class="row">
       <div class="col-xs-12" style="padding : 30px">
