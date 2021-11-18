@@ -21,28 +21,10 @@
 
 <link href="./main.3f6952e4.css" rel="stylesheet">
 </head>
-
-
 <style>
-
-
-
-}
-
-.container1 {
-   width:300px;
-   height:100px;
-   background:tomato;
-}
-.container2 {
-   width:300px;
-   height:100px;
-   background:red;
-}
-.container3 {
-   width:300px;
-   height:100px;
-   background:blue;
+.outer {
+  display: flex;
+  justify-content: center;
 }
 </style>
 
@@ -116,57 +98,45 @@
 
           <div>
 
-            <div id="map" style="width:100%;height:350px;"> </div>
-            <div class="row" >
-              <div class="col-6 col-md-6" style="height:300px; background:white;">
-        
-              
-                <h2>프로필</h2> 
+            <div id="map"  style="width:100%;height:350px;">
+
+         
+            <div class="row" style="display: flex; justify-content: center; text-align: center;" >
+
+
+          
+              <div class="col-4 col-md-4" style="height:300px; background:white; border: 1px solid black;">
+                <h2>회원정보</h2> 
              <br>
                 <a href="" >
                   <img src="D:\lecture\Git\Project_nunadri\assets\default.png" width="100px" alt="">
                 </a>
                 <h3>닉네임:</h3>
-                <button >수정</button>
+               
+                <tr>
+                  <td>
+                    <input type="submit" name="submit" value="내 정보 수정" />
+                 </td>
+              </tr>
               </div> 
            
 
 
-              <div class="col-6 col-md-6" style="height:300px; background:white;"> 
-              
+              <div class="col-4 col-md-4" style="height:300px; background:white; border: 1px solid black; margin-left: 10px;"> 
               <h2>
                본인작성게시글
-              </h2>
+              </h2><br>
+              <tr>
+                <td>
+                  <input type="submit" name="submit" value="수정" />
+               </td>
+            </tr>
             </div> 
-            </div>
-      
 
 
-
-          <!-- <input type="text"><button type="submit"></button> -->
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <table class="type04">
-                    <tr>
-                      <th scope="row">항목명</th>
-                      <td>내용이 들어갑니다.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">항목명</th>
-                      <td>내용이 들어갑니다.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">항목명</th>
-                      <td>내용이 들어갑니다.</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
-          
+
           
        </div>
       </div>
