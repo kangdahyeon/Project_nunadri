@@ -31,6 +31,15 @@
     border-radius: 4px;
     transition: all 300ms ease-in-out;
   }
+
+  #removeLine h2:after, h2:before, h2:after, h2:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: transparent;
+    width: 0;
+}
+
 </style>
 
 <body style="overflow: hidden;">
@@ -109,37 +118,32 @@
 
 
                   <div class="col-4 col-md-4" style="height:300px;  border: 5px solid white;
-              border-radius: 20px; ">
+              border-radius: 20px;" id="removeLine">
                     <h2>프로필</h2>
                     <br>
                     <a href="">
-                      <img style="border-radius: 20px; box-shadow: 5px 5px 10px grey;"
+                      <img style="border-radius: 20px;"
                         src="../../../assets/images/default.png" width="100px" alt="">
                     </a>
-                    <h3>닉네임:</h3>
-
-                    <tr>
-                      <td>
-                        <input type="submit" name="submit" value="내 정보 수정" />
-                      </td>
-                    </tr>
+                   <br><br>
+                    <div class="div_right">
+                      <a href="#" class="btn btn-default" id="writerBtn" style="right: 38%;">내 정보 수정</a>
+                    </div>
                   </div>
 
 
 
-                  <div class="col-4 col-md-4" style="height:300px; border: 5px solid white; margin-left: 10px;
-              border-radius: 20px;">
+                  <div class="col-4 col-md-4 " style="height:300px; border: 5px solid white; margin-left: 10px;
+              border-radius: 20px;" id="removeLine">
                     <h2>
                       본인작성게시글
                     </h2><br>
                     <img src="../../../assets/images/mypage.jpg" style=" border-radius: 20px;
-              box-shadow: 5px 5px 10px grey;" width="100px" alt="">
+            " width="100px" height="100px" alt="">
                     <br><br>
-                    <tr>
-                      <td>
-                        <input type="submit" name="submit" value="수정" />
-                      </td>
-                    </tr>
+                    <div class="div-child" >
+                      <a href="#" class="btn btn-default" id="writerBtn"  style="right: 43%;">수정</a>
+                    </div>
                   </div>
 
 
@@ -153,22 +157,9 @@
       </div>
 
 
-      <footer class="footer-container text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/"
-                  title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/"
-                  title="Beautiful Free Images">Unsplash</a></p>
-            </div>
-          </div>
-        </div>
-      </footer>
 
 
     </div>
-
-
 
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
