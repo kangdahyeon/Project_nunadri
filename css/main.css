@@ -4749,7 +4749,7 @@ button.close {
 #site-border-left,
 #site-border-right,
 #site-border-top {
-  background: rgb(80, 55, 27);
+  background: rgb(10, 55, 50);
   position: fixed;
   z-index: 1;
 }
@@ -4836,7 +4836,7 @@ body.minimal {
   }
   .section-container_detail {
     padding: 80px 0;
-    background-color: rgb(10,55,50);
+    /* background-color: rgb(10,55,50); */
   }
 }
 .section-container.only-container {
@@ -5437,5 +5437,38 @@ textarea {
 .img_detail {
   max-height: 350px;
 }
+
+.section-container_detail2 {
+  padding: 80px 0;
+  background-color: rgb(10,55,50);
+}
+
+.hero-full-container2 {
+height: 100vh;
+background-color: rgb(10,55,50);
+}
+.section-container2 {
+margin: 40px;
+background-color: rgb(10, 55, 50);
+}
+
+.nabar2 {
+margin: 10px;
+background-color: rgb(10, 55, 50);
+}
+
+.container3 {
+background-color: rgb(10, 55, 50);
+text-align: center;
+}
+
+.font_white {
+color: white;
+}
+
+.font_black {
+  color: black;
+}
+
 
 /*# sourceMappingURL=main.70a66962.map*/
